@@ -3,11 +3,19 @@
         span {
             white-space: pre;
         }
+        a, #count {
+            float:right;
+            font-size: 10px;
+            line-height: 22px;
+        }
     </style>
 
     <body>
         <span id="text"></span>
+        <a id="listbtn" href="#">show list</a>
+        <a id="clearbtn" style="display:none;" href="#">clear</a>
         <ul id="list"></ul>
+        <span id="count" style="display:none;"></span>
     </body>
 
     <script src="popup.js"></script>
