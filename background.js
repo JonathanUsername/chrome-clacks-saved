@@ -14,6 +14,13 @@ function getList() {
     return list;
 };
 
+// to get host from url
+var getLocation = function(href) {
+    var l = document.createElement("a");
+    l.href = href;
+    return l;
+};
+
 // The main listener to check each request's headers for clacks
 chrome.webRequest.onCompleted.addListener(
     function(details) {
@@ -63,6 +70,7 @@ chrome.webNavigation.onCommitted.addListener(
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         var tabId = sender.tab.id;
+        console.log(sender.tab)
 
         if (request.clacks) {
             if (clacks[tabId]) clacks[tabId] += "\n" + request.clacks;
@@ -74,10 +82,11 @@ chrome.runtime.onMessage.addListener(
             chrome.pageAction.show(tabId);
             // My messy hack that saves the sites.
             if (SAVE){
-                var url = sender.tab.url
+                var url = getLocation(sender.tab.url).hostname
                 var saved = {
                     "sites": []
                 }
+                console.log(url)
                 chrome.storage.sync.get("sites", function(sites_data){
                     if (sites_data){
                         list = sites_data["sites"]
