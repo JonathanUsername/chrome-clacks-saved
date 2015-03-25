@@ -9,6 +9,6 @@ so that when you click on the icon, it shows you all the places that you've seen
 
 For more info on the HTTP-based tribute to Sir Terry, see here: 
 
-http://www.gnuterrypratchett.com/
-http://www.bbc.co.uk/news/technology-31907768
-http://www.theregister.co.uk/2015/03/18/sir_terry_pratchett_http_header/
+- http://www.gnuterrypratchett.com/
+- http://www.bbc.co.uk/news/technology-31907768
+- http://www.theregister.co.uk/2015/03/18/sir_terry_pratchett_http_header/
