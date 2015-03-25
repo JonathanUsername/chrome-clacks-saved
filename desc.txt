@@ -1,0 +1,14 @@
+A mod of the fantastic chrome-clacks - https://github.com/newfolder0/chrome-clacks by Peter Bell et al. that also keeps a list of the sites discovered, and uses an icon that I prefer. 
+
+This is a tribute to Sir Terry Pratchett, but if I've inadvertently infringed on anyone's copyright, I'll happily take this down.
+
+WHY I WROTE IT:
+I'm obviously a bit of a Pratchett fan, so naturally I loved the idea of a Chrome extension to highlight pages including the "X-Clacks-Overhead" HTTP header. Unfortunately, I'm also really picky, and I like to tinker, so I couldn't leave the existing extension alone. This version shows an icon of Terry Pratchett when the site contains the header, but also logs the hostname to sync storage, so that when you click on the icon, it shows you all the places that you've seen it before. It's awesome seeing the sites that have decided to take part in this tribute, and to see the list slowly grow. How many can you find?
+
+ON PRIVACY:
+This extension will record a list of hostnames that include the X-Clacks-Overhead header, and it stores it in "sync" storage. This is a function available to Chrome extensions and means that this data will be available to any instance of Chrome that you sign in to. Lots of apps take advantage of this feature but it does mean that this list of hostnames is stored by Google in some way. If you trust Google's magic data L-space, then don't be afraid of the provisos on installation. Beyond that, it does no more than read the HTTP headers of the sites you visit. However, if you still don't trust me, feel free to read the source code directly, here: https://github.com/JonathanUsername/chrome-clacks-saved
+
+For more info on the HTTP-based tribute to Sir Terry, see here:
+http://www.gnuterrypratchett.com/
+http://www.bbc.co.uk/news/technology-31907768
+http://www.theregister.co.uk/2015/03/18/sir_terry_pratchett_http_header/

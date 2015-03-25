@@ -1,10 +1,10 @@
 {
-    "name": "Clacks Overhead - GNU Terry Pratchett",
-    "short_name": "Clacks Overhead",
+    "name": "Clacks Tracker - GNU Terry Pratchett",
+    "short_name": "Clacks Tracker",
     "version": "1.5",
     "manifest_version": 2,
-    "description": "GNU Terry Pratchett. Show user when 'Clacks-Overhead' appears in HTTP headers. This version also saves the URLs in your sync storage, so you know where you've been that includes it, which may not appeal to some, but does to me.",
-    "author": "Peter Bell (with mods by Jon King)",
+    "description": "GNU Terry Pratchett. Show user when 'Clacks-Overhead' appears in HTTP headers, and keeps a list of the sites.",
+    "author": "Mostly Peter Bell (with mods by Jon King)",
     "background" : {
         "scripts": ["background.js"],
         "persistent": true
@@ -17,10 +17,10 @@
     ],
     "icons": { "16": "images/pratchett.png",
            "48": "images/pratchett.png",
-          "128": "images/pratchett.png" },
+          "128": "images/pratchett128.png" },
     "page_action": {
         "default_icon": "images/pratchett.png",
-         "default_title": "Clacks Overhead",
+         "default_title": "Clacks Tracker",
          "default_popup": "popup.html"
     },
     "content_scripts": [
