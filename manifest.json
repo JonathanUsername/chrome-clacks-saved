@@ -1,0 +1,32 @@
+{
+    "name": "Clacks Overhead - GNU Terry Pratchett",
+    "short_name": "Clacks Overhead",
+    "version": "1.5",
+    "manifest_version": 2,
+    "description": "GNU Terry Pratchett. Show user when 'Clacks-Overhead' appears in HTTP headers. This version also saves the URLs in your sync storage, so you know where you've been that includes it, which may not appeal to some, but does to me.",
+    "author": "Peter Bell (with mods by Jon King)",
+    "background" : {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "<all_urls>",
+        "webNavigation",
+        "webRequest",
+        "storage"
+    ],
+    "icons": { "16": "images/pratchett.png",
+           "48": "images/pratchett.png",
+          "128": "images/pratchett.png" },
+    "page_action": {
+        "default_icon": "images/pratchett.png",
+         "default_title": "Clacks Overhead",
+         "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ]
+}
