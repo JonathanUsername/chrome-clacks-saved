@@ -28,7 +28,7 @@ var getLocation = function(href) {
 
 var updateList = function(){
     console.log("updateList")
-    chrome.storage.sync.get("sites", function(sites_data){ 
+    chrome.storage.sync.get("sites", function(sites_data){
         list = sites_data["sites"];
     })
 }
@@ -60,7 +60,7 @@ chrome.webRequest.onCompleted.addListener(
                 // - related to premature deletion? - don't think so...
                 clacks[details.tabId] = newClacks;
                 updateList()
-                chrome.pageAction.show[details.tabId];
+                chrome.pageAction.show(details.tabId);
                 if (DEBUG) console.log("store");
             }
         }
